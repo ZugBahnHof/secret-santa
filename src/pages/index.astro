@@ -1,5 +1,6 @@
 ---
 import PageWrapper from "../components/PageWrapper.astro";
+import SnowBorder from "../components/SnowBorder.astro";
 ---
 <PageWrapper>
     <div id="content">
@@ -21,38 +22,38 @@ import PageWrapper from "../components/PageWrapper.astro";
         </ol>
     </div>
 
-
+    <SnowBorder/>
 </PageWrapper>
 
 <style>
-#content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 100vh;
-    background-image: radial-gradient(
-        #325487 0%,
-        rgba(50, 84, 135, 0) 100%
-    );
-    padding: 4em;
-}
+    #content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 100vh;
+        background-image: radial-gradient(
+                #325487 0%,
+                rgba(50, 84, 135, 0) 100%
+        );
+        padding: 4em;
+    }
 
-ol {
-    list-style: decimal;
-    padding-left: 1rem;
-}
+    ol {
+        list-style: decimal;
+        padding-left: 1rem;
+    }
 
-h1 {
-    text-align: center;
-    font-size: 3rem;
-    margin-bottom: 2rem;
-    font-weight: bold;
-}
+    h1 {
+        text-align: center;
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        font-weight: bold;
+    }
 
-h2 {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    font-weight: bold;
-}
+    h2 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        font-weight: bold;
+    }
 </style>

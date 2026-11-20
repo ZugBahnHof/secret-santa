@@ -78,7 +78,7 @@ export default {
 
   #name {
     color: white;
-    font-family: Purisa, Comic Sans MS, Roboto, Montserrat, sans-serif;
+    font-family: "Emilys Candy", Purisa, Comic Sans MS, Roboto, Montserrat, sans-serif;
     position: absolute;
     left: 25%;
     top: 50%;

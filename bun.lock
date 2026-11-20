@@ -6,6 +6,8 @@
       "name": "wichteln22",
       "dependencies": {
         "@astrojs/vue": "^7.1.6",
+        "@fontsource-variable/grenze-gotisch": "^5.3.0",
+        "@fontsource/emilys-candy": "^5.3.0",
         "@tailwindcss/vite": "^4.3.5",
         "astro": "^7.4.13",
         "core-js": "^3.8.3",
@@ -153,6 +155,10 @@
     "@emnapi/runtime": ["@emnapi/runtime@2.0.0-beta.2", "", { "dependencies": { "tslib": "^2.4.0" } }, "sha512-JcrSPzPvZuNZvJqPTF9Fw25LbOJ8avzFVlaf2grmH4Cku0oGP47tRgqPZadcfj3YoZMHkFVnCYFbQM8I+i5QEw=="],
 
     "@emnapi/wasi-threads": ["@emnapi/wasi-threads@2.2.0", "", { "dependencies": { "tslib": "^2.4.0" } }, "sha512-JP7OYH38Q7+pyTAe14raZHLQIK7BDKbdwji+Xi3pcd/6QkJYQH3SX4wu6EplGrGJWRepoNzedfm0G3B9Z4e9Rw=="],
+
+    "@fontsource-variable/grenze-gotisch": ["@fontsource-variable/grenze-gotisch@5.3.0", "", {}, "sha512-cWTjlS5H5PXkE2ABZ3KajF5YXLSJlJpAdXTbioEIvdCnlXCwRqnIXEzOA5yeLGPdvkW1ilZaAIJAASr28LNERg=="],
+
+    "@fontsource/emilys-candy": ["@fontsource/emilys-candy@5.3.0", "", {}, "sha512-Jpr27K16q1LR5vxMbuxwDBJ+vsYgJ25kaFy5a+xjNXTiND4+Dl+SrvGlq/c115DxnSOGjKhANKH4Dn7q7+mPew=="],
 
     "@img/colour": ["@img/colour@1.1.0", "", {}, "sha512-Td76q7j57o/tLVdgS746cYARfSyxk8iEfRxewL9h4OMzYhbW4TAcppl0mT4eyqXddh6L/jwoM75mo7ixa/pCeQ=="],
 
