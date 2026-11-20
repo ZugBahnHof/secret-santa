@@ -1,0 +1,58 @@
+---
+import PageWrapper from "../components/PageWrapper.astro";
+---
+<PageWrapper>
+    <div id="content">
+        <h1>Secret Santa</h1>
+
+        <h2>How does it work?</h2>
+
+        <ol>
+            <li>You receive a link and a secret password.</li>
+            <li>Click the link and enter the password.</li>
+            <li>
+                The name of a person will appear.
+                You should buy a gift for them.
+                There usually is a price range for the gift.
+            </li>
+            <li>Do not tell anybody the recipient of your gift, it's a secret!</li>
+            <li>Buy and wrap the gift.</li>
+            <li>At the end there is a gift exchange :)</li>
+        </ol>
+    </div>
+
+
+</PageWrapper>
+
+<style>
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: radial-gradient(
+        #325487 0%,
+        rgba(50, 84, 135, 0) 100%
+    );
+    padding: 4em;
+}
+
+ol {
+    list-style: decimal;
+    padding-left: 1rem;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+</style>
