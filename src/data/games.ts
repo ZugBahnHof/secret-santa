@@ -1,4 +1,5 @@
-import {ǃ, ಠ_ಠ} from "../data/crypto.obfuscated";
+import {ǃ, ಠ_ಠ} from "./crypto.obfuscated";
+import {isValidPassword, getRecipient} from "./dk_house_game.ts";
 
 export type Game = {
     slug: string;
@@ -12,5 +13,9 @@ export const games: Game[] = [
         checkPassword: ǃ,
         getRecipient: ಠ_ಠ,
     },
-
+    {
+        slug: "dk-house-2026",
+        checkPassword: isValidPassword,
+        getRecipient,
+    }
 ]

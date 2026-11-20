@@ -11,7 +11,7 @@ import GiftApp from "./GiftApp.vue";
 </div>
 <SnowBorder/>
 <DottingTitle/>
-<GiftApp client:load />
+<GiftApp gameId={Astro.params.gameName ?? ""} client:load />
 </div>
 
 <style>

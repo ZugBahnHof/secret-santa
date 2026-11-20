@@ -87,6 +87,7 @@ export default {
     transition: all ease-in-out .5s;
     transition-delay: 0s;
     animation: none;
+    text-align: right;
   }
 
   @keyframes squiggle {

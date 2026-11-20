@@ -1,15 +1,27 @@
 <script lang="ts" setup>
 import GiftInput from "./GiftInput.vue";
 import GiftBox from "./GiftBox.vue";
-import {ǃ, ಠ_ಠ} from "../data/crypto.obfuscated";
+
+import { games } from "../data/games.ts";
 
 import { computed, ref } from 'vue';
 
+const props = defineProps({
+  gameId: {
+    type: String,
+    required: true,
+  },
+});
+
+const game = computed(() => {
+  return games.find((g) => g.slug === props.gameId);
+});
+
 const input = ref("");
-const open = computed(() => !!ǃ(input.value));
+const open = computed(() => !!game.value?.checkPassword(input.value));
 const name = computed(() => {
   if (!open.value) return "???";
-  return ಠ_ಠ(input.value);
+  return game.value?.getRecipient(input.value);
 });
 </script>
 
