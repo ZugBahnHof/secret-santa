@@ -1,6 +1,7 @@
 ---
 const title = "Secret Santa"
 const baseUrl = import.meta.env.BASE_URL;
+import "../styles/global.css";
 ---
 
 <!DOCTYPE html>
@@ -9,15 +10,9 @@ const baseUrl = import.meta.env.BASE_URL;
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="{baseUrl}favicon.ico">
+    <link rel="icon" href={`${baseUrl}favicon.ico`}>
     <title>{title}</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
             background: radial-gradient(166.92% 50% at 50% 50%, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%),
             linear-gradient(180deg, #3C40C6 0%, #575fcf 100%);
@@ -27,15 +22,22 @@ const baseUrl = import.meta.env.BASE_URL;
 
         @keyframes movebg {
             from {
-                background-position: 0;
+                background-position: 500vw;
             }
 
             to {
-                background-position: 80vw;
+                background-position: 410vw;
             }
         }
 
-        #app[v-cloak] {
+
+        @keyframes hide {
+          to {
+            visibility: hidden;
+          }
+        }
+
+        #loader {
             position: absolute;
             top: 50%;
             left: 50%;
@@ -53,7 +55,29 @@ const baseUrl = import.meta.env.BASE_URL;
             );
             background-size: 1000vw;
             border-radius: 12px;
-            animation: 40s linear 0s infinite movebg;
+            z-index: 1000;
+            animation: 2s linear 0s movebg, hide 0s 2s forwards;
+        }
+        #loader:before {
+            content: "Loading";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 3vmin;
+        }
+
+        #loader-backdrop {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: black;
+            opacity: 0.5;
+            z-index: 999;
+            animation: hide 0s 2s forwards;
         }
     </style>
 </head>
@@ -62,6 +86,8 @@ const baseUrl = import.meta.env.BASE_URL;
     <strong>We're sorry but this site doesn't work properly without JavaScript enabled.
         Please enable it to continue.</strong>
 </noscript>
+<div id="loader"></div>
+<div id="loader-backdrop"></div>
 <slot></slot>
 </body>
 </html>
