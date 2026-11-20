@@ -114,7 +114,7 @@ yarn-error.log*
 /.changelog
 lib/
 out/
-public/
+.astro/
 spec-reports
 template/src/__tests__/__snapshots__/
 
