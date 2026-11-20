@@ -34,7 +34,7 @@ const codes = [
     "🧧 🎄 🐉 ❄️",
 ];
 
-const giftAssignments = [3, 11, 6, 4, 10, 9, 2, 5, 0, 14, 1, 12, 8, 7, 13];
+const giftAssignments = [11, 9, 4, 8, 10, 12, 14, 13, 7, 1, 2, 3, 6, 5, 0];
 
 export function isValidPassword(password: string): boolean {
     return codes.includes(password);
