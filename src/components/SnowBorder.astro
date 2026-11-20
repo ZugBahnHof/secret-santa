@@ -1,14 +1,6 @@
-<template>
-  <div class="wrapper">
-    <span v-for="n in 400" :key="n">❄</span>
-  </div>
-</template>
-
-<script>
-export default {
-  name: "SnowBorder"
-}
-</script>
+<div class="wrapper">
+  {Array.from({ length: 400 }, () => <span>❄</span>)}
+</div>
 
 <style scoped lang="scss">
   .wrapper {

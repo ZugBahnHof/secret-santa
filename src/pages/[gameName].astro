@@ -1,0 +1,15 @@
+---
+import type { GetStaticPaths } from "astro";
+import App from '../components/App.astro';
+import PageWrapper from "../components/PageWrapper.astro";
+
+export const getStaticPaths = (() => {
+	return [
+        { params: { gameName: "dk" } },
+    ];
+}) satisfies GetStaticPaths;
+---
+
+<PageWrapper>
+    <App />
+</PageWrapper>

@@ -1,12 +1,5 @@
-<template>
-  <div class="snow" v-for="n in 200" :key="n"></div>
-</template>
+{Array.from({ length: 200 }, () => <div class="snow"></div>)}
 
-<script>
-export default {
-  name: "SnowFlakes",
-}
-</script>
 
 <style lang="scss" scoped>
 @function random_range($min, $max) {
