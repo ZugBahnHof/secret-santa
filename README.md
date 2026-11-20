@@ -1,26 +1,26 @@
-# wichteln22
+# Secret Santa
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/6a76a1c9-6d8e-4d4e-8afc-f88f56342781/deploy-status)](https://app.netlify.com/sites/wichteln22/deploys)
 [![wakatime](https://wakatime.com/badge/github/ZugBahnHof/Wichteln22.svg)](https://wakatime.com/badge/github/ZugBahnHof/Wichteln22)
 
 ## Project setup
 ```
-yarn install
+bun install
 ```
 
 ### Compiles and hot-reloads for development
 ```
-yarn serve
+bun run dev
 ```
 
 ### Compiles and minifies for production
 ```
-yarn build
+bun run build
 ```
 
 ### Lints and fixes files
 ```
-yarn lint
+# TODO
 ```
 
 ### Customize configuration
